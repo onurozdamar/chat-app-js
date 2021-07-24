@@ -1,0 +1,95 @@
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f100;
+}
+
+.container {
+  background: rgb(134, 128, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(134, 128, 240, 1) 0%,
+    rgba(112, 50, 228, 1) 48%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  width: 75%;
+  max-width: 1000px;
+  min-width: 500px;
+  height: 500px;
+  margin: 20px auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  width: calc(100% - 20px);
+  height: 90%;
+  padding: 10px;
+  overflow: auto;
+}
+
+.form,
+form,
+.messageContainer {
+  width: 100%;
+  display: flex;
+}
+
+.message {
+  padding: 12px;
+  margin: 5px;
+  background-color: rgb(124, 238, 71);
+  border-radius: 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.messageText {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  margin-right: 10px;
+}
+
+.messageDateText {
+  font-size: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+input {
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: 1px white solid;
+  border-radius: 5px;
+  margin: 0 10px;
+  outline: none;
+}
+
+.send-button {
+  padding: 10px;
+  background-color: rgb(64, 190, 102);
+  width: 37px;
+  margin-right: 10px;
+  border-radius: 50px;
+  color: antiquewhite;
+  border: none;
+}
